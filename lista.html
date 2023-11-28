@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+    <head>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="./styles.css"/>
+        <link rel="icon" type="image/png" href="./imagens/favicon.png"/>
+        <script src="./script.js"></script>
+        <title>Journey Forge</title>
+    </head>
+
+    <body>
+        <header class="header">
+            <a href="./index.html"><img src="./imagens/Logo.png"/></a>
+            <a href="./index.html" class="titleLogo">JOURNEYFORGE</a>
+            <nav>
+                <a href="./index.html" id="button">Loja</a>
+                <a onclick="scrollFunc('eventos')" id="button">Eventos</a>
+                <a href="./sobre.html" id="button">Sobre</a>
+                <a href="./lista.html"><img src="./imagens/Search.png" id="search"/></a>
+            </nav>
+        </header>
+
+        <main>
+            <section id="proximosLancamentos">
+                
+                <h2>Proximos Lançamentos</h2>
+                <div id="proximosLancamentosJanela">
+                    <div id="sidescroll">
+                    
+                        <div class="card">
+                            <p>A highland Song</p>
+                            <img src="./imagens/jogos/AHighlandSong.jpg"/>
+                            <p>31/01/2024</p>
+                        </div>
+    
+                        <div class="card">
+                            <p>Core Keeper</p>
+                            <img src="./imagens/jogos/CoreKeeper.jpg"/>
+                            <p>12/03/2024</p>
+                        </div>
+
+                        <div class="card">
+                            <p>Howl</p>
+                            <img src="./imagens/jogos/howl.png"/>
+                            <p>05/12/2023</p>
+                        </div>
+
+                        <div class="card">
+                            <p>Moonstone Island</p>
+                            <img src="./imagens/jogos/MoonstoneIsland.jpg"/>
+                            <p>29/04/2024</p>
+                        </div>
+
+                        <div class="card">
+                            <p>On Your Tail</p>
+                            <img src="./imagens/jogos/OnYourTail.jpg"/>
+                            <p>03/03/2024</p>
+                        </div>
+
+                        <div class="card">
+                            <p>The Star Named EOS</p>
+                            <img src="./imagens/jogos/TheStarNamedEOS.jpg"/>
+                            <p>23/01/2024</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="lista">
+                <section id="filtros">
+
+                    <p class="filterText">Gêneros</p>
+
+                    <div id="generos">       
+                        <button class="btn active" onclick="filtro('tudo')">Todos</button>
+                        <button class="btn" onclick="filtro('plataforma')">Plataforma</button>
+                        <button class="btn" onclick="filtro('casual')">Casual</button>
+                        <button class="btn" onclick="filtro('aventura')">Aventura</button>
+                    </div>
+                </section>
+
+                <section id="tabela">
+                    <table>
+                        <tr>
+                            <td><div class="tabelaLogoName filtro casual"><img src="./imagens/jogos/CoreKeeper.jpg" class="tableimg"/><p>Core Keeper</p></div></td>
+                            <td><div class="tabelaBuyInfo filtro casual"><p class="preco">R$ 44,90</p> <a class="comprar">Comprar</a></div></td> 
+                        </tr>
+
+                        <tr>
+                            <td><div class="tabelaLogoName filtro aventura plataforma"><img src="./imagens/jogos/Celeste.png" class="tableimg"/><p>Celeste</p></div></td>
+                            <td><div class="tabelaBuyInfo filtro plataforma aventura"><p class="preco">R$ 44,90</p> <a class="comprar">Comprar</a></div></td> 
+                        </tr>
+
+                        <tr>
+                            <td><div class="tabelaLogoName filtro plataforma aventura casual" ><img src="./imagens/jogos/Gris.png" class="tableimg"/><p>Gris</p></div></td>
+                            <td><div class="tabelaBuyInfo filtro plataforma aventura casual"><p class="preco">R$ 44,90</p> <a class="comprar">Comprar</a></div></td> 
+                        </tr>
+
+                        <tr>
+                            <td><div class="tabelaLogoName filtro plataforma aventura"><img src="./imagens/jogos/Limbo.png" class="tableimg"/><p>Limbo</p></div></td>
+                            <td><div class="tabelaBuyInfo filtro plataforma aventura"><p class="preco">R$ 44,90</p> <a class="comprar">Comprar</a></div></td> 
+                        </tr>
+
+                        <tr>
+                            <td><div class="tabelaLogoName filtro aventura casual"><img src="./imagens/jogos/Oxenfree.png" class="tableimg"/><p>Oxenfree</p></div></td>
+                            <td><div class="tabelaBuyInfo filtro aventura casual"><p class="preco">R$ 44,90</p> <a class="comprar">Comprar</a></div></td> 
+                        </tr>
+
+                        <tr>
+                            <td><div class="tabelaLogoName filtro plataforma"><img src="./imagens/jogos/ChildOfLight.png" class="tableimg"/><p>Child Of Light</p></div></td>
+                            <td><div class="tabelaBuyInfo filtro plataforma"><p class="preco">R$ 44,90</p> <a class="comprar">Comprar</a></div></td> 
+                        </tr>
+
+                        <tr>
+                            <td><div class="tabelaLogoName filtro aventura casual plataforma"><img src="./imagens/jogos/AHighlandSong.jpg" class="tableimg"/><p>A Highland Song</p></div></td>
+                            <td><div class="tabelaBuyInfo filtro aventura casual plataforma"><p class="preco">R$ 44,90</p> <a class="comprar">Comprar</a></div></td> 
+                        </tr>
+                    </table>
+                </section>
+            </section>
+        </main>
+        <script>
+            filtro('tudo');
+        </script>
+        <footer>
+            <p>Felipe Menezes © Creio que possua direitos reservados... Tenho quase certeza.</p>
+        </footer>
+    </body>
+</html>

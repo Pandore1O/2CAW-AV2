@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+    <head>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="./styles.css"/>
+        <link rel="icon" type="image/png" href="./imagens/favicon.png"/>
+        <script src="./script.js"></script>
+        <title>Journey Forge</title>
+    </head>
+
+    <body>
+        <header class="header">
+            <a href="./index.html"><img src="./imagens/Logo.png"/></a>
+            <a href="./index.html" class="titleLogo">JOURNEYFORGE</a>
+            <nav>
+                <a href="./index.html" id="button">Loja</a>
+                <a onclick="scrollFunc('eventos')" id="button">Eventos</a>
+                <a href="./sobre.html" id="button">Sobre</a>
+                <a href="./lista.html"><img src="./imagens/Search.png" id="search"/></a>
+            </nav>
+        </header>
+        
+        <main>
+            <article id="destaque">
+                <h2 class="headerText">Destaque da Semana</h2>
+                
+                <section class="conteudoBox">
+                    <section class="destaqueCommon">
+                        <img src="./imagens/jogos/Celeste.png" id="destaqueImg"/>
+                        <p>Em uma envolvente e desafiadora jornada, você será conduzido através da história de Madeline, uma personagem incrivelmente determinada que se aventura a escalar uma montanha misteriosa e majestosa. Este jogo de plataforma meticulosamente projetado oferece uma série de obstáculos que vão desde desafios físicos de alta precisão até barreiras emocionais profundamente pessoais. À medida que avança, você não apenas aprimora suas habilidades, mas também desvenda a cativante narrativa de autodescoberta e superação pessoal que envolve Madeline, uma experiência intensificada por uma trilha sonora envolvente e visuais deslumbrantes. Prepare-se para uma aventura que combina habilidade, emoção e reflexão em um único pacote, proporcionando uma jornada profundamente imersiva que permanecerá com você muito depois de terminar.</p>
+                    </section>
+
+                    <section class="destaqueCommon">
+                        <p id="trailer">Trailer do Jogo</p>
+                        <hr id="trailerHr"/>
+                        <iframe id="destaqueVideo" src="https://www.youtube.com/embed/6GlTmtXA7WA?autoplay=1&mute=1&loop=1&playlist=6GlTmtXA7WA&controls=0"></iframe>
+                        <div class="compraBox">
+                            <p class="preco">R$ 44,90</p>
+                            <a class="comprar">Comprar</a>
+                        </div>
+                    </section>
+
+                </section>
+            </article>
+
+            <article id="maisAventuras">
+                <h2 class="headerText">Descubra mais Aventuras</h2>
+
+                <section class="conteudoBox">
+                    <section class="aventurasCommon">
+                        <img src="./imagens/jogos/Gris.png" class="aventurasImg"/>
+                        <h3 class="aventurasNames">GRIS</h3>
+                        <p>Uma aventura emocional e artística que se destaca por sua jogabilidade simples e narrativa emocional. Os jogadores assumem o controle de Gris, uma jovem que embarca em uma jornada de autodescoberta em um mundo misterioso e mágico. Ao longo do jogo, Gris ganha a habilidade de cantar, cada vez mais forte, para superar desafios e resolver quebra-cabeças.</p>
+                        <div class="compraBox">
+                            <p class="preco">R$ 44,90</p>
+                            <a class="comprar">Comprar</a>
+                        </div>
+                    </section>
+
+                    <section class="aventurasCommon">
+                        <img src="./imagens/jogos/ChildOfLight.png" class="aventurasImg"/>
+                        <h3 class="aventurasNames">Child of Light</h3>
+                        <p>Uma aventura emocional e artística que se destaca por sua jogabilidade simples e narrativa emocional. Os jogadores assumem o controle de Gris, uma jovem que embarca em uma jornada de autodescoberta em um mundo misterioso e mágico. Ao longo do jogo, Gris ganha a habilidade de cantar, cada vez mais forte, para superar desafios e resolver quebra-cabeças.</p>
+                        <div class="compraBox">
+                            <p class="preco">R$ 44,90</p>
+                            <a class="comprar">Comprar</a>
+                        </div>
+                    </section>
+
+                    <section class="aventurasCommon">
+                        <img src="./imagens/jogos/Limbo.png" class="aventurasImg"/>
+                        <h3 class="aventurasNames">Limbo</h3>
+                        <p>Uma experiência de jogo singular que combina atmosfera sombria e quebra-cabeças desafiadores para criar uma narrativa intrigante. Os jogadores assumem o papel de um jovem indefeso que acorda em um mundo sombrio e perigoso em busca de sua irmã desaparecida. O jogo se desenrola em um ambiente repleto de ameaças e enigmas complexos.</p>
+                        <div class="compraBox">
+                            <p class="preco">R$ 44,90</p>
+                            <a class="comprar">Comprar</a>
+                        </div>
+                    </section>
+
+                    <section class="aventurasCommon">
+                        <img src="./imagens/jogos/Oxenfree.png" class="aventurasImg"/>
+                        <h3 class="aventurasNames">Oxenfree</h3>
+                        <p>Uma jornada mágica em um mundo de conto de fadas, misturando elementos de RPG e plataforma em uma experiência única. Os jogadores assumem o papel de Aurora, uma jovem princesa que acorda em um misterioso reino de fantasia chamado Lemuria. A narrativa é contada em versos, adicionando um toque poético e encantador à história.</p>
+                        <div class="compraBox">
+                            <p class="preco">R$ 44,90</p>
+                            <a class="comprar">Comprar</a>
+                        </div>
+                    </section>
+                </section>
+            </article>
+
+            <article id="eventos">
+                <section id="eventosBox">
+                    
+                    <h2>Semana de Descoberta</h2>
+                    <section id="eventoAtual">
+                    
+                        <img src="./imagens/promos/SemanaDeDescoberta.png"/>
+                        <p>
+                            Bem-vindo(a) à emocionante "Semana de Descoberta" na JourneyForge, um evento extraordinário projetado para iluminar seus momentos de jogo. 
+                            Durante esta semana especial, convidamos você a mergulhar em um universo de possibilidades, explorando nossa vasta coleção de jogos com descontos exclusivos. 
+                            Além das ofertas irresistíveis, preparamos desafios interativos e eventos comunitários que incentivam a descoberta de novos títulos e a interação entre nossos aventureiros virtuais. 
+                            Cada jogo apresenta uma narrativa única e desafios intrigantes, proporcionando uma experiência de descoberta constante. 
+                            Junte-se a nós para uma semana repleta de surpresas, diversão e, acima de tudo, a emoção de desbravar territórios desconhecidos. 
+                            Prepare-se para uma jornada inesquecível na "Semana de Descoberta" da JourneyForge, onde cada clique é uma porta para novas e emocionantes experiências.
+                        </p>
+                    </section>
+                    
+                    <hr>
+                    
+                    <h2>Proximos Eventos</h2>
+                    <section id="proximosEventos"> 
+                        
+                        <section class="proximosEventosBox" id="eventoNatal">
+                            <img src="./imagens/promos/PromoNatal.png"/>
+                            <p>Promoção de Natal</p>
+                            <p>24/12/2023</p>
+                        </section>
+                        <hr>
+                        <section class="proximosEventosBox" id="eventoAnoNovo">
+                            <img src="./imagens/promos/PromoAnoNovo.png"/>
+                            <p>Promoção de Ano Novo</p>
+                            <p>30/12/2023</p>
+                        </section>
+                    </section>
+                </section>
+            </article>
+        </main>
+
+        <footer>
+            <p>Felipe Menezes © Creio que possua direitos reservados... Tenho quase certeza.</p>
+        </footer>
+    </body>
+</html>
